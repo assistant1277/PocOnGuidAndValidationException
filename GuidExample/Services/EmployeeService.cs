@@ -39,7 +39,6 @@ namespace GuidExample.Services
             {
                 throw new EmployeeNotFoundException("Employee details cannot be null");
             }
-
             _employeeRepository.Add(employee);
             return employee;
         }
