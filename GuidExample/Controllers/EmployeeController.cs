@@ -37,8 +37,8 @@ namespace GuidExample.Controllers
             if(!ModelState.IsValid)
             {
                 var errors = string.Join(";", ModelState.Values
-                    .SelectMany(v=>v.Errors)
-                    .Select(e=>e.ErrorMessage));
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage));
                 throw new ValidationException($"{errors}");
             }
             var newEmployee = _employeeService.AddEmployee(employee);
