@@ -4,7 +4,6 @@ using GuidExample.Repositories;
 using GuidExample.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
 
 namespace GuidExample
 {
